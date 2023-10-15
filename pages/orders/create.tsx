@@ -10,6 +10,10 @@ const OrderCreate = () => {
         router.back()
     }, [router])
 
+    const onOrderClick = useCallback(() => {
+        router.back()
+    }, [router])
+
     return (
         <div className="TukarSampah flex flex-col w-full min-h-screen bg-green-700">
             {/*<div className="Rectangle124 w-96 h-96 left-[375px] top-[114px] absolute origin-top-left -rotate-180 bg-white rounded-tl-3xl rounded-tr-3xl" />*/}
@@ -59,7 +63,7 @@ const OrderCreate = () => {
                 </div>
             </div>
             <div className="Frame77 flex-col bg-white pb-8 px-4">
-                <div className="Button h-12 py-3.5 bg-green-700 rounded-full shadow justify-center items-center">
+                <div onClick={onOrderClick} className="Button h-12 py-3.5 bg-green-700 rounded-full shadow justify-center items-center">
                     <div className="MulaiCariPicker text-center text-white text-sm font-normal font-['DM Sans']">Jadwalkan</div>
                 </div>
             </div>
