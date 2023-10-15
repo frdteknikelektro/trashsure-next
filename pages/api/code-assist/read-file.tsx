@@ -25,16 +25,23 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             path.join(process.cwd(), `${requestedPath || 'index'}.tsx`),
         ];
 
-        // Check if any of the file paths exist and match one of the allowed extensions
-        const isValidFile = await fileExistsWithExtension(filePathsToCheck, allowedExtensions);
-        console.log(filePathsToCheck)
+        // Check if any of the file paths exist
+        let validFilePath = ''
+        for (const i in filePathsToCheck) {
+            const isValid = await fileExists(filePathsToCheck[i])
+            if (isValid) {
+                validFilePath = filePathsToCheck[i];
+                break;
+            }
+        }
+        console.log({ validFilePath })
 
-        if (!isValidFile) {
+        if (!validFilePath) {
             return res.status(400).json({ error: 'Invalid file extension in path or file does not exist' });
         }
 
         // Read the valid file based on the provided path
-        const fileContent = await fs.readFile(filePathsToCheck.find(fileExists => fileExists)!, 'utf-8');
+        const fileContent = await fs.readFile(validFilePath, 'utf-8');
 
         res.status(200).json({ path: requestedPath, content: fileContent });
     } catch (error) {
@@ -42,16 +49,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 }
 
-async function fileExistsWithExtension(filePaths: string[], extensions: string[]) {
-    for (const filePath of filePaths) {
-        try {
-            const stats = await fs.stat(filePath);
-            if (stats.isFile() && extensions.some(extension => filePath.endsWith(extension))) {
-                return true;
-            }
-        } catch (error) {
-            // Continue checking other paths
-        }
+async function fileExists(filePath: string) {
+    try {
+        const stats = await fs.stat(filePath);
+        return stats.isFile();
+    } catch (error) {
+        return false;
     }
-    return false;
 }

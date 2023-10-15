@@ -23,7 +23,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         ];
 
         // Check if any of the file paths exist
-        const validFilePath = filePathsToCheck.find(async (file) => await fileExists(file));
+        let validFilePath = ''
+        for (const i in filePathsToCheck) {
+            const isValid = await fileExists(filePathsToCheck[i])
+            if (isValid) {
+                validFilePath = filePathsToCheck[i];
+                break;
+            }
+        }
+        console.log({ validFilePath })
 
         if (!validFilePath) {
             return res.status(404).json({ error: 'File not found' });

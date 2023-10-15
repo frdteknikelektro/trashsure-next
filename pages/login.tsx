@@ -24,8 +24,8 @@ const Login: React.FC = () => {
                 />
             </div>
             <div className="Frame60 w-full px-6 py-8 bg-white rounded-tl-3xl rounded-tr-3xl flex-col justify-start items-center gap-8 inline-flex">
-                <div className="MasukPilahSampah self-stretch text-black text-xl font-bold font-['DM Sans']">
-                    Masuk Pilah Sampah
+                <div className="MasukTrashSure self-stretch text-black text-xl font-bold font-['DM Sans']">
+                    Masuk Trash Sure
                 </div>
                 <div className="Frame66 flex-col justify-start items-center gap-10 flex">
                     <div className="TextGoogleBasic w-72 pl-4 pr-8 py-3.5 bg-white rounded-xl shadow border border-green-700 justify-start items-center gap-4 inline-flex">
