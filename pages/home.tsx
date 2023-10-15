@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import { useSession } from "next-auth/react";
+import {useRouter} from "next/router";
 
 const Home = () => {
     const { data } = useSession()
+    const router = useRouter()
+
+    const onOrderCreate = useCallback(() => {
+        router.push('/orders/create').catch()
+    }, [router])
 
     return (
         <div className="HomeNewUser flex flex-col w-full bg-green-700">
@@ -46,7 +52,7 @@ const Home = () => {
             <div className="DaurUlang bg-gray-100 pt-16 -mt-10 px-6 left-0 rounded-t-3xl flex-col justify-start items-start gap-3.5 inline-flex">
                 <div className="MulaiDaurUlang text-neutral-900 text-base font-bold font-['DM Sans']">Mulai Daur Ulang ♻️</div>
                 <div className="Frame67 px-1 py-2 justify-start items-start gap-3 inline-flex">
-                    <div className="Frame13 w-36 px-3 py-2 bg-amber-400 rounded-lg shadow flex-col justify-start items-start gap-2 inline-flex">
+                    <div onClick={onOrderCreate} className="Frame13 w-36 px-3 py-2 bg-amber-400 rounded-lg shadow flex-col justify-start items-start gap-2 inline-flex">
                         <div className="Frame11 self-stretch h-20 flex-col justify-center items-center gap-2 flex">
                             <div className="Frame14 self-stretch h-9 p-0.5 flex-col justify-center items-start gap-2.5 flex">
                                 <div className="IconsGeneratingTokens w-8 h-8 relative">

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f01f494-f663-4f3d-bacb-f093e11fb67f" name="Changes" comment="Finish ChatGPT Code Assist">
-      <change afterPath="$PROJECT_DIR$/public/home/access-time.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/generating-tokens-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/home/generating-tokens.svg" afterDir="false" />
+    <list default="true" id="5f01f494-f663-4f3d-bacb-f093e11fb67f" name="Changes" comment="Finish styling home">
+      <change afterPath="$PROJECT_DIR$/pages/orders/create.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/base/chevron-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/base/clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/base/map.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/base/trash-2.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.tsx" afterDir="false" />
     </list>
@@ -55,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/frdinawan/WebstormProjects/trashsure-next/public/home",
+    "last_opened_file_path": "/Users/frdinawan/WebstormProjects/trashsure-next/public/base",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,11 +70,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/base" />
+      <recent name="$PROJECT_DIR$/pages/orders" />
       <recent name="$PROJECT_DIR$/public/home" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/pages/api/code-assist" />
-      <recent name="$PROJECT_DIR$/pages/api" />
-      <recent name="$PROJECT_DIR$/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -101,7 +103,7 @@
       <workItem from="1697284361002" duration="9000" />
       <workItem from="1697284405819" duration="2610000" />
       <workItem from="1697289959560" duration="13898000" />
-      <workItem from="1697326108750" duration="4670000" />
+      <workItem from="1697326108750" duration="6540000" />
     </task>
     <task id="LOCAL-00001" summary="Add authentication">
       <option name="closed" value="true" />
@@ -119,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697328775525</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finish styling home">
+      <option name="closed" value="true" />
+      <created>1697330804888</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697330804888</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +138,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add authentication" />
     <MESSAGE value="Finish ChatGPT Code Assist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish ChatGPT Code Assist" />
+    <MESSAGE value="Finish styling home" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish styling home" />
   </component>
 </project>
