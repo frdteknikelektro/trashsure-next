@@ -1,6 +1,7 @@
 import React, {useCallback} from 'react';
 import { useSession } from "next-auth/react";
 import {useRouter} from "next/router";
+import BottomTabNavigator from "@/components/bottom-tab-navigator/bottom-tab-navigator";
 
 const Orders = () => {
     const { data } = useSession()
@@ -10,7 +11,7 @@ const Orders = () => {
         router.back()
     }, [router])
 
-    return (
+    return (<>
         <div className="Order flex flex-col w-full min-h-screen bg-green-700">
             {/*<div className="Rectangle124 w-96 h-96 left-[376px] top-[101px] absolute origin-top-left -rotate-180 bg-slate-100 rounded-tl-3xl rounded-tr-3xl" />*/}
             <div className="BaseMenuNavigation px-6 py-2.5 flex-col justify-start inline-flex">
@@ -23,7 +24,7 @@ const Orders = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-slate-100 flex-1 pt-7 rounded-t-3xl">
+            <div className="bg-slate-100 flex-1 pt-7 pb-14 rounded-t-3xl">
                 <div className="Frame32 flex">
                     <div className="OnGoing flex-1 text-center text-neutral-900 text-sm font-bold font-['DM Sans']">On Going</div>
                     <div className="Riwayat flex-1 text-center text-zinc-400 text-sm font-bold font-['DM Sans']">Riwayat</div>
@@ -99,7 +100,8 @@ const Orders = () => {
                 </div>
             </div>
         </div>
-    );
+        <BottomTabNavigator />
+    </>);
 }
 
 export default Orders;

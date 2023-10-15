@@ -1,6 +1,7 @@
 import React, {useCallback, useEffect} from 'react';
 import {signOut, useSession} from "next-auth/react";
 import {useRouter} from "next/router";
+import BottomTabNavigator from "@/components/bottom-tab-navigator/bottom-tab-navigator";
 
 const Profile = () => {
     const { data, status } = useSession()
@@ -14,7 +15,7 @@ const Profile = () => {
         signOut().catch()
     }, [])
 
-    return (
+    return (<>
         <div className="Profile flex flex-col w-screen min-h-screen bg-green-700">
             <div className="Profile flex-col justify-start items-start inline-flex">
                 <div className="BaseMenuNavigation px-6 py-2.5 flex-col justify-start items-start flex">
@@ -29,7 +30,7 @@ const Profile = () => {
                 </div>
                 <div className="UserProfile self-stretch px-6 py-2 justify-start items-start gap-2 inline-flex">
                     <div className="PhotoProfile w-20 h-20 justify-center items-center flex">
-                        <img className="Ellipse1 w-20 h-20 rounded-full" src={data?.user?.image || ''} />
+                        <img className="Ellipse1 w-20 h-20 rounded-full" src={data?.user?.image  || 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'} />
                     </div>
                     <div className="Frame69 flex-col justify-start items-start gap-0.5 inline-flex">
                         <div className="User text-center text-white text-2xl font-bold font-['DM Sans']">{data?.user?.name}</div>
@@ -118,7 +119,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
-            <div className="Scroll pt-8 py-4 px-4 bg-white rounded-t-3xl mt-4">
+            <div className="Scroll flex-1 pt-8 pb-20 px-4 bg-white rounded-t-3xl mt-4">
                 {/*<div className="Rectangle124 w-96 h-96 left-[376px] top-0 absolute origin-top-left -rotate-180 bg-white rounded-tl-3xl rounded-tr-3xl" />*/}
                 <div className="Frame73 h-56 flex flex-col gap-9">
                     <div className="Frame57 flex-col justify-start items-start gap-5 flex">
@@ -156,7 +157,8 @@ const Profile = () => {
                 </div>
             </div>
         </div>
-    );
+        <BottomTabNavigator />
+    </>);
 }
 
 export default Profile;

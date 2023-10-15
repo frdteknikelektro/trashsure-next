@@ -1,6 +1,7 @@
 import React, {useCallback} from 'react';
 import { useSession } from "next-auth/react";
 import {useRouter} from "next/router";
+import BottomTabNavigator from "@/components/bottom-tab-navigator/bottom-tab-navigator";
 
 const Home = () => {
     const { data } = useSession()
@@ -10,7 +11,7 @@ const Home = () => {
         router.push('/orders/create').catch()
     }, [router])
 
-    return (
+    return (<>
         <div className="HomeNewUser flex flex-col w-full min-h-screen bg-green-700">
             {/*<div className="Rectangle124 w-full h-96 left-[376px] top-[221px] absolute origin-top-left -rotate-180 bg-slate-100 rounded-tl-3xl rounded-tr-3xl" />*/}
             <div className="BaseProfile z-10 mx-6 mt-6 justify-start items-center gap-5 flex">
@@ -49,7 +50,7 @@ const Home = () => {
                 </div>
             </div>
             {/*<div className="AssesmentUlang left-[256px] top-[206px] absolute text-zinc-400 text-xs font-normal font-['DM Sans']">Assesment Ulang</div>*/}
-            <div className="DaurUlang bg-gray-100 pt-16 -mt-10 px-6 left-0 rounded-t-3xl flex flex-col flex-1 justify-start items-start gap-3.5">
+            <div className="DaurUlang bg-gray-100 pt-16 pb-14 -mt-10 px-6 left-0 rounded-t-3xl flex flex-col flex-1 justify-start items-start gap-3.5">
                 <div className="MulaiDaurUlang text-neutral-900 text-base font-bold font-['DM Sans']">Mulai Daur Ulang ♻️</div>
                 <div className="Frame67 px-1 py-2 justify-start items-start gap-3 inline-flex">
                     <div onClick={onOrderCreate} className="Frame13 w-36 px-3 py-2 bg-amber-400 rounded-lg shadow flex-col justify-start items-start gap-2 inline-flex">
@@ -123,7 +124,8 @@ const Home = () => {
                 </div>
             </div>
         </div>
-    );
+        <BottomTabNavigator />
+    </>);
 }
 
 export default Home;
