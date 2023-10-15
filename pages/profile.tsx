@@ -16,7 +16,7 @@ const Profile = () => {
     }, [])
 
     return (<>
-        <div className="Profile flex flex-col w-screen min-h-screen bg-green-700">
+        <div className="Profile flex flex-col w-full min-h-screen bg-green-700">
             <div className="Profile flex-col justify-start items-start inline-flex">
                 <div className="BaseMenuNavigation px-6 py-2.5 flex-col justify-start items-start flex">
                     <div className="Frame33 justify-start items-center gap-5 inline-flex">

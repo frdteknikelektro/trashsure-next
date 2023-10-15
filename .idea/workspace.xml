@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f01f494-f663-4f3d-bacb-f093e11fb67f" name="Changes" comment="Add splash screen">
+    <list default="true" id="5f01f494-f663-4f3d-bacb-f093e11fb67f" name="Changes" comment="Update title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/code-assist/read-file.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/code-assist/read-file.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/code-assist/write-file.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/code-assist/write-file.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,7 @@
       <workItem from="1697284405819" duration="2610000" />
       <workItem from="1697289959560" duration="13898000" />
       <workItem from="1697326108750" duration="20763000" />
-      <workItem from="1697350843661" duration="4028000" />
+      <workItem from="1697350843661" duration="4411000" />
     </task>
     <task id="LOCAL-00001" summary="Add authentication">
       <option name="closed" value="true" />
@@ -175,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697352028708</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update title">
+      <option name="closed" value="true" />
+      <created>1697354895489</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697354895489</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,7 @@
     <MESSAGE value="Minor fixing internal tools" />
     <MESSAGE value="Add bottom tab navigator" />
     <MESSAGE value="Add splash screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add splash screen" />
+    <MESSAGE value="Update title" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update title" />
   </component>
 </project>
