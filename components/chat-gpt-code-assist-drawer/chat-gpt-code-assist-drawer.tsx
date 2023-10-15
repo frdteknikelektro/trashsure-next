@@ -63,7 +63,7 @@ if (process.env.NODE_ENV === "development") {
         const systemMessage = useMemo<ChatCompletionMessageParam>(() => ({
             role: 'system',
             content: `You're working as an AI assistant for a Next.js project using TailwindCSS.\n\n
-NEVER include updated code on your response.\n\n
+You will answer as short as possible and never include updated code in the response.\n\n
 You're enable to edit code directly with write_current_page_data function.
             \n\n`
                 + `Today is ${dayjs().format('dddd, DD MMMM YYYY')}`

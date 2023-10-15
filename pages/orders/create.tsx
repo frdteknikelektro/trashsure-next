@@ -3,7 +3,6 @@ import { useSession } from "next-auth/react";
 import {useRouter} from "next/router";
 
 const OrderCreate = () => {
-    const { data } = useSession()
     const router = useRouter()
 
     const onBackClick = useCallback(() => {

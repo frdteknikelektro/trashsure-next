@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f01f494-f663-4f3d-bacb-f093e11fb67f" name="Changes" comment="Finish styling order create">
-      <change afterPath="$PROJECT_DIR$/pages/orders/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/orders/trash.png" afterDir="false" />
+    <list default="true" id="5f01f494-f663-4f3d-bacb-f093e11fb67f" name="Changes" comment="Finish styling orders">
+      <change afterPath="$PROJECT_DIR$/pages/profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/chat-gpt-code-assist-drawer/chat-gpt-code-assist-drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/chat-gpt-code-assist-drawer/chat-gpt-code-assist-drawer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/orders/create.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/orders/create.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/frdinawan/WebstormProjects/trashsure-next/public/orders",
+    "last_opened_file_path": "/Users/frdinawan/WebstormProjects/trashsure-next/pages",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,11 +70,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/public/orders" />
       <recent name="$PROJECT_DIR$/pages/orders" />
       <recent name="$PROJECT_DIR$/public/base" />
       <recent name="$PROJECT_DIR$/public/home" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -100,7 +103,7 @@
       <workItem from="1697284361002" duration="9000" />
       <workItem from="1697284405819" duration="2610000" />
       <workItem from="1697289959560" duration="13898000" />
-      <workItem from="1697326108750" duration="8299000" />
+      <workItem from="1697326108750" duration="12762000" />
     </task>
     <task id="LOCAL-00001" summary="Add authentication">
       <option name="closed" value="true" />
@@ -134,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697332673723</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finish styling orders">
+      <option name="closed" value="true" />
+      <created>1697334432354</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697334432354</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +156,7 @@
     <MESSAGE value="Finish ChatGPT Code Assist" />
     <MESSAGE value="Finish styling home" />
     <MESSAGE value="Finish styling order create" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish styling order create" />
+    <MESSAGE value="Finish styling orders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish styling orders" />
   </component>
 </project>

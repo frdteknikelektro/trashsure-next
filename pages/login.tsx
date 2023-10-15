@@ -43,7 +43,6 @@ const Login: React.FC = () => {
                             <span className="text-black text-sm font-normal font-['Inter'] leading-none">Belum memiliki akun? </span>
                             <span className="text-black text-sm font-bold font-['Inter'] leading-none">Buat Akun</span>
                         </div>
-                        <div className="LupaPassword text-center text-black text-sm font-bold font-['Inter'] leading-none">Lupa Password</div>
                     </div>
                 </div>
             </div>

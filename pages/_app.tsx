@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { SessionProvider, useSession } from "next-auth/react";
 import { PropsWithChildren } from "react";
 import {ChatGptCodeAssistDrawer} from "@/components/chat-gpt-code-assist-drawer/chat-gpt-code-assist-drawer";
+import {useRouter} from "next/router";
 
 export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
     // @ts-ignore
@@ -28,8 +29,15 @@ export default function App({ Component, pageProps: { session, ...pageProps } }:
 }
 
 function Auth({ children }: PropsWithChildren) {
+    const router = useRouter()
+
     // if `{ required: true }` is supplied, `status` can only be "loading" or "authenticated"
-    const { status } = useSession({ required: true })
+    const { status } = useSession({
+        required: true,
+        onUnauthenticated() {
+            router.push('/login').catch()
+        }
+    })
 
     if (status === "loading") {
         return <div>Loading...</div>
