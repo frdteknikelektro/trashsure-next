@@ -38,12 +38,12 @@ const Login: React.FC = () => {
                             Masuk dengan Akun Google
                         </div>
                     </div>
-                    <div className="Text relative w-full flex flex-col justify-center">
-                        <div className="BelumMemilikiAkunBuatAkun text-center">
-                            <span className="text-black text-sm font-normal font-['Inter'] leading-none">Belum memiliki akun? </span>
-                            <span className="text-black text-sm font-bold font-['Inter'] leading-none">Buat Akun</span>
-                        </div>
-                    </div>
+                    {/*<div className="Text relative w-full flex flex-col justify-center">*/}
+                    {/*    <div className="BelumMemilikiAkunBuatAkun text-center">*/}
+                    {/*        <span className="text-black text-sm font-normal font-['Inter'] leading-none">Belum memiliki akun? </span>*/}
+                    {/*        <span className="text-black text-sm font-bold font-['Inter'] leading-none">Buat Akun</span>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>

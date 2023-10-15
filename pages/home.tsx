@@ -83,7 +83,7 @@ const Home = () => {
                 <div className="BacaArtikel text-neutral-900 text-base font-bold font-['DM Sans']">Baca Artikel</div>
                 <div className="Frame40 pb-4 flex-col justify-start items-start gap-6 flex">
                     <div className="Artikel min-h-24 bg-white rounded-2xl flex">
-                        <img className="PexelsMaliMaeder8022212 w-40 h-24 left-0 top-0 rounded-lg" src="https://via.placeholder.com/157x98" />
+                        <img className="PexelsMaliMaeder8022212 w-40 h-24 left-0 top-0 rounded-lg" src="/home/article-1.png" />
                         <div className="Frame5014 w-40 min-h-20 px-4 left-[156.52px] top-[11px] rounded-lg flex-col justify-start items-start gap-2.5 inline-flex">
                             <div className="Frame5015 px-2 py-1 bg-green-100 rounded-sm justify-center items-center gap-2.5 inline-flex">
                                 <div className="BlogArtikel text-center text-emerald-700 text-xs font-medium font-['Poppins']">Blog & Artikel</div>
@@ -96,7 +96,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="Artikel min-h-24 bg-white rounded-2xl flex">
-                        <img className="PexelsMaliMaeder8022212 w-40 h-24 left-0 top-0 rounded-lg" src="https://via.placeholder.com/157x98" />
+                        <img className="PexelsMaliMaeder8022212 w-40 h-24 left-0 top-0 rounded-lg" src="/home/article-2.png" />
                         <div className="Frame5014 w-40 min-h-20 px-4 left-[156.52px] top-[11px] rounded-lg flex-col justify-start items-start gap-2.5 inline-flex">
                             <div className="Frame5015 px-2 py-1 bg-green-100 rounded-sm justify-center items-center gap-2.5 inline-flex">
                                 <div className="BlogArtikel text-center text-emerald-700 text-xs font-medium font-['Poppins']">Blog & Artikel</div>
@@ -109,7 +109,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="Artikel min-h-24 bg-white rounded-2xl flex">
-                        <img className="PexelsMaliMaeder8022212 w-40 h-24 left-0 top-0 rounded-lg" src="https://via.placeholder.com/157x98" />
+                        <img className="PexelsMaliMaeder8022212 w-40 h-24 left-0 top-0 rounded-lg" src="/home/article-3.png" />
                         <div className="Frame5014 w-40 min-h-20 px-4 left-[156.52px] top-[11px] rounded-lg flex-col justify-start items-start gap-2.5 inline-flex">
                             <div className="Frame5015 px-2 py-1 bg-green-100 rounded-sm justify-center items-center gap-2.5 inline-flex">
                                 <div className="BlogArtikel text-center text-emerald-700 text-xs font-medium font-['Poppins']">Blog & Artikel</div>
