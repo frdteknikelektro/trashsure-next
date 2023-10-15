@@ -334,7 +334,7 @@ You're enable to edit code directly with write_current_page_data function.
                 </a>
             </div>
             {open &&
-                <div className={`fixed top-0 right-0 h-full w-64 transform transition-transform ${drawerClasses} dark:bg-gray-800 bg-gray-200 dark:shadow-md`}>
+                <div className={`z-20 fixed top-0 right-0 h-full w-64 transform transition-transform ${drawerClasses} dark:bg-gray-800 bg-gray-200 dark:shadow-md`}>
                     <div className="absolute top-0 right-0 left-0 text-end">
                         <button onClick={onClose} className="p-2 text-gray-800 hover:text-gray-600 text-2xl mt-1 mr-2">×</button> {/* Using relative positioning */}
                     </div>

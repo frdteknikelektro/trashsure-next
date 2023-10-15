@@ -1,0 +1,16 @@
+diff --git a/node_modules/openai/streaming.mjs b/node_modules/openai/streaming.mjs
+index f7b462f..3193f54 100644
+--- a/node_modules/openai/streaming.mjs
++++ b/node_modules/openai/streaming.mjs
+@@ -37,7 +37,10 @@ export class Stream {
+                 }
+                 if (sse.event === null) {
+                     try {
+-                        yield JSON.parse(sse.data);
++                        if (sse.raw.length <= 1)
++                            yield JSON.parse(sse.data);
++                        else
++                            yield JSON.parse(sse.data + sse.raw[1]);
+                     }
+                     catch (e) {
+                         console.error(`Could not parse message into JSON:`, sse.data);

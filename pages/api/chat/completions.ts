@@ -3,6 +3,7 @@ import OpenAI from "openai";
 import { ChatCompletion, ChatCompletionChunk } from "openai/resources/chat";
 import { ChatCompletionCreateParamsStreaming } from "openai/src/resources/chat/completions";
 import { APIError } from "openai/error";
+import delay from "@/utils/delay";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
