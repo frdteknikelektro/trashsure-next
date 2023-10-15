@@ -18,8 +18,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
         // Construct possible file paths to check
         const filePathsToCheck = [
-            path.join(process.cwd(), `${filePath}.tsx`),
-            path.join(process.cwd(), 'index', `${filePath}.tsx`)
+            path.join(process.cwd(), filePath, `index.tsx`),
+            path.join(process.cwd(), `${filePath || 'index'}.tsx`),
         ];
 
         // Check if any of the file paths exist

@@ -124,7 +124,7 @@ You're enable to edit code directly with write_current_page_data function.
                     return await fetch('/api/code-assist/read-file', {
                         method: 'POST',
                         headers: {'Content-Type': 'application/json'},
-                        body: JSON.stringify({ path: `pages/${pathname}` })
+                        body: JSON.stringify({ path: `pages/${pathname.replace('/', '')}` })
                     })
                         .then(async (response) => {
                             if (!response.ok && response.status == 400) throw new Error((await response.json()).error.message)
@@ -141,7 +141,7 @@ You're enable to edit code directly with write_current_page_data function.
                     return await fetch('/api/code-assist/write-file', {
                         method: 'POST',
                         headers: {'Content-Type': 'application/json'},
-                        body: JSON.stringify({ path: `pages/${pathname}`, content: JSON.parse(function_call.arguments).content })
+                        body: JSON.stringify({ path: `pages/${pathname.replace('/', '')}`, content: JSON.parse(function_call.arguments).content })
                     })
                         .then(async (response) => {
                             if (!response.ok && response.status == 400) throw new Error((await response.json()).error.message)

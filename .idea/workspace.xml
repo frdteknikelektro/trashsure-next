@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f01f494-f663-4f3d-bacb-f093e11fb67f" name="Changes" comment="Minor fixing internal tools">
-      <change afterPath="$PROJECT_DIR$/components/bottom-tab-navigator/bottom-tab-navigator.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/access_time-active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/access_time.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/home-active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/home.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/user-active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icons/user.svg" afterDir="false" />
+    <list default="true" id="5f01f494-f663-4f3d-bacb-f093e11fb67f" name="Changes" comment="Add bottom tab navigator">
+      <change afterPath="$PROJECT_DIR$/public/splash.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/chat-gpt-code-assist-drawer/chat-gpt-code-assist-drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/chat-gpt-code-assist-drawer/chat-gpt-code-assist-drawer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/orders/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/orders/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/code-assist/read-file.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/code-assist/read-file.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/code-assist/write-file.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/code-assist/write-file.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,30 +53,30 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/frdinawan/WebstormProjects/trashsure-next/public/icons",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "/Users/frdinawan/WebstormProjects/trashsure-next/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/frdinawan/WebstormProjects/trashsure-next/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/frdinawan/WebstormProjects/trashsure-next/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/icons" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/public/orders" />
       <recent name="$PROJECT_DIR$/pages/orders" />
-      <recent name="$PROJECT_DIR$/public/base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -108,7 +105,8 @@
       <workItem from="1697284361002" duration="9000" />
       <workItem from="1697284405819" duration="2610000" />
       <workItem from="1697289959560" duration="13898000" />
-      <workItem from="1697326108750" duration="19103000" />
+      <workItem from="1697326108750" duration="20763000" />
+      <workItem from="1697350843661" duration="1165000" />
     </task>
     <task id="LOCAL-00001" summary="Add authentication">
       <option name="closed" value="true" />
@@ -166,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697344832630</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add bottom tab navigator">
+      <option name="closed" value="true" />
+      <created>1697348177420</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697348177420</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +186,7 @@
     <MESSAGE value="Finish styling orders" />
     <MESSAGE value="Finish styling profile" />
     <MESSAGE value="Minor fixing internal tools" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor fixing internal tools" />
+    <MESSAGE value="Add bottom tab navigator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add bottom tab navigator" />
   </component>
 </project>
