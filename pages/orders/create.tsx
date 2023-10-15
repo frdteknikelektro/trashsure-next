@@ -1,9 +1,12 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useState} from 'react';
 import { useSession } from "next-auth/react";
 import {useRouter} from "next/router";
 
 const OrderCreate = () => {
     const router = useRouter()
+
+    const [selectedWaste, setSelectedWaste] = useState("");
+    const [selectedLocation, setSelectedLocation] = useState("");
 
     const onBackClick = useCallback(() => {
         router.back()
@@ -35,7 +38,20 @@ const OrderCreate = () => {
                         <div className="IconsTrash2 w-5 h-5 relative">
                             <img src="/base/trash-2.svg"/>
                         </div>
-                        <div className="FormPlaceholder w-64 text-zinc-400 text-sm font-normal font-['DM Sans']">Pilih Jenis Sampah</div>
+                        {/*<div className="FormPlaceholder w-64 text-zinc-400 text-sm font-normal font-['DM Sans']">Pilih Jenis Sampah</div>*/}
+                        <select
+                            className="FormSelectOption w-64 text-zinc-400 text-sm font-normal font-['DM Sans']"
+                            value={selectedWaste}
+                            onChange={(e) => setSelectedWaste(e.target.value)}
+                        >
+                            <option value="">Pilih Jenis Sampah</option>
+                            <option value="Plastik">Plastik</option>
+                            <option value="Botol">Botol</option>
+                            <option value="Diapers">Diapers</option>
+                            <option value="Kardus">Kardus</option>
+                            <option value="Logam">Logam</option>
+                            <option value="Minyak Jelantah">Minyak Jelantah</option>
+                        </select>
                     </div>
                 </div>
                 <div className="Form px-1 py-2 flex-col justify-start items-start gap-2 flex">
@@ -46,7 +62,15 @@ const OrderCreate = () => {
                         <div className="IconsMap w-5 h-5 relative">
                             <img src="/base/map.svg" />
                         </div>
-                        <div className="FormPlaceholder w-64 text-zinc-400 text-sm font-normal font-['DM Sans']">Pilih Lokasi Pengambilan</div>
+                        {/*<div className="FormPlaceholder w-64 text-zinc-400 text-sm font-normal font-['DM Sans']">Pilih Lokasi Pengambilan</div>*/}
+                        <select
+                            className="FormSelectOption w-64 text-zinc-400 text-sm font-normal font-['DM Sans']"
+                            value={selectedLocation}
+                            onChange={(e) => setSelectedLocation(e.target.value)}
+                        >
+                            <option value="">Pilih Lokasi Pengambilan</option>
+                            <option value="Yogyakarta">Yogyakarta</option>
+                        </select>
                     </div>
                 </div>
                 <div className="Form px-1 py-2 flex-col justify-start items-start gap-2 flex">
