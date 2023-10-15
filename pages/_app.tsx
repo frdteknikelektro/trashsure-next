@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { SessionProvider, useSession } from "next-auth/react";
 import { PropsWithChildren } from "react";
+import {ChatGptCodeAssistDrawer} from "@/components/chat-gpt-code-assist-drawer/chat-gpt-code-assist-drawer";
 
 export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
     // @ts-ignore
@@ -9,17 +10,19 @@ export default function App({ Component, pageProps: { session, ...pageProps } }:
 
     return (
         <SessionProvider session={session}>
-            {auth ? (
-                <Auth>
+            <ChatGptCodeAssistDrawer>
+                {auth ? (
+                    <Auth>
+                        <div className="mx-auto max-w-2xl"> {/* Apply max-w-2xl class here */}
+                            <Component {...pageProps} />
+                        </div>
+                    </Auth>
+                ) : (
                     <div className="mx-auto max-w-2xl"> {/* Apply max-w-2xl class here */}
                         <Component {...pageProps} />
                     </div>
-                </Auth>
-            ) : (
-                <div className="mx-auto max-w-2xl"> {/* Apply max-w-2xl class here */}
-                    <Component {...pageProps} />
-                </div>
-            )}
+                )}
+            </ChatGptCodeAssistDrawer>
         </SessionProvider>
     )
 }
